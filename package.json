@@ -1,0 +1,27 @@
+{
+  "name": "automatehub-github-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server de AutomateHub para automatizar tareas en GitHub mediante lenguaje natural",
+  "main": "dist/utils/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/utils/server.ts",
+    "start": "node dist/utils/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "@octokit/rest": "^20.0.2",
+    "dotenv": "^16.4.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  }
+}
